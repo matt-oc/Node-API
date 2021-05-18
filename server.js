@@ -4,7 +4,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const storage = require('node-persist');
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 let leaderboard = [{"name": "Jess", "score":100},
 {"name": "John", "score": 92},
 {"name": "Peter", "score": 90},
