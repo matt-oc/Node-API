@@ -4,6 +4,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const storage = require('node-persist');
+const port = process.env.port || 3000;
 let leaderboard = [{"name": "Jess", "score":100},
 {"name": "John", "score": 92},
 {"name": "Peter", "score": 90},
@@ -39,7 +40,7 @@ app.post('/addscore', function(req, res) {
   res.send('Sorry your score didnt make it to the leaderboard');
 });
 
-app.listen(3002);
+app.listen(port);
 console.log('Storage Server running on port 3002');
 
 async function store(item)  {
