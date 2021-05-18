@@ -41,7 +41,7 @@ app.post('/addscore', function(req, res) {
 });
 
 app.listen(port);
-console.log('Storage Server running on port 3002');
+console.log('Storage Server running on port 3000');
 
 async function store(item)  {
 
